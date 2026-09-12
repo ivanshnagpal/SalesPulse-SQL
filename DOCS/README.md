@@ -1,10 +1,10 @@
-# 📊 SalesPulse — Sales Analytics System
+# SalesPulse — Sales Analytics System
 
 > A production-grade SQL portfolio project demonstrating real-world sales analytics using complex JOINs, subqueries, normalization, views, stored procedures, and window functions — built entirely in MySQL.
 
 ---
 
-## 🏢 Business Scenario
+## Business Scenario
 
 **SalesPulse** is the analytics backbone for a B2B/B2C sales company operating across 8 Indian cities. It tracks every customer purchase, product sold, salesperson's performance, and return request — answering questions that real sales managers care about daily.
 
@@ -26,7 +26,7 @@
 
 ---
 
-## 🗃️ Database Design
+## Database Design
 
 ### Schema Type: Star Schema — 3NF Normalised
 
@@ -62,7 +62,7 @@
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 SalesPulse/
@@ -87,7 +87,7 @@ SalesPulse/
 
 ---
 
-## ✅ SQL Concepts Covered
+## SQL Concepts Covered
 
 | Concept                                        | File              | Query Numbers |
 | ---------------------------------------------- | ----------------- | ------------- |
@@ -117,7 +117,7 @@ SalesPulse/
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ```sql
 -- Step 1: Run schema (creates database and all tables)
@@ -138,7 +138,7 @@ SOURCE queries/analysis/07_analysis.sql;
 
 ---
 
-## 💡 5 Interview Talking Points
+## 5 Interview Talking Points
 
 1. **"I designed the schema in 3NF."** — product_name lives in dim_product because it depends on product_id alone (2NF), and region_name lives in dim_region because it depends on region_id not customer_id (3NF). No data redundancy.
 
@@ -152,4 +152,8 @@ SOURCE queries/analysis/07_analysis.sql;
 
 ---
 
-_SalesPulse — Sales Analytics System | MySQL Implementation & Adaptation by Vansh Nagpal | [GitHub](https://github.com/ivanshnagpal) | [LinkedIn](https://www.linkedin.com/in/vansh-nagpal-vn011/)_
+Here’s a clean version for your README:
+
+### Connect
+
+**Vansh Nagpal** · [GitHub](https://github.com/ivanshnagpal?utm_source=chatgpt.com) · [LinkedIn](https://www.linkedin.com/in/vansh-nagpal-vn011?utm_source=chatgpt.com)
