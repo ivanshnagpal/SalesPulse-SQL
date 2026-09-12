@@ -138,22 +138,6 @@ SOURCE queries/analysis/07_analysis.sql;
 
 ---
 
-## 5 Interview Talking Points
-
-1. **"I designed the schema in 3NF."** — product_name lives in dim_product because it depends on product_id alone (2NF), and region_name lives in dim_region because it depends on region_id not customer_id (3NF). No data redundancy.
-
-2. **"I used SELF JOIN for the salesperson hierarchy."** — dim_salesperson has a manager_id that points back to its own salesperson_id. Joining the table to itself as 'emp' and 'mgr' lets me display each person with their manager's name in one query.
-
-3. **"LEFT JOIN with IS NULL is my go-to for finding missing data."** — All customers with no purchases: LEFT JOIN fact_sales, then WHERE sale_id IS NULL. The NULL after LEFT JOIN means no matching row was found.
-
-4. **"A correlated subquery runs once per outer row."** — In Q9, for each sale row in the outer query, the inner query computes the MAX for that specific customer using the outer row's customer_id. That linkage is the correlation.
-
-5. **"A View is a saved SELECT that runs fresh every time."** — vw_sales_report joins 4 tables. After creating it, anyone can query it with simple SELECT statements. No data is stored — it's just the query definition saved.
-
----
-
-Here’s a clean version for your README:
-
 ### Connect
 
 **Vansh Nagpal** · [GitHub](https://github.com/ivanshnagpal?utm_source=chatgpt.com) · [LinkedIn](https://www.linkedin.com/in/vansh-nagpal-vn011?utm_source=chatgpt.com)
